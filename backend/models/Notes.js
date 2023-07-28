@@ -1,18 +1,18 @@
-/* eslint-disable no-undef */
 const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
 const NotesSchema = new Schema({
-    title: {
-        String,
-        required: true
-    },
+  title: {
+    String,
+    required: true,
+  },
   description: {
     type: String,
     required: true,
   },
   tag: {
     type: String,
-    default:'General'
+    default: "General",
   },
   date: {
     type: Date,
