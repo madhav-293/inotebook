@@ -17,5 +17,5 @@ const UserSchema = new Schema({
     default: Date.now(), // current time when user is created
   },
 });
-
-module.exports = mongoose.model("User", UserSchema);
+const User = mongoose.model("user", UserSchema);
+module.exports = User;
